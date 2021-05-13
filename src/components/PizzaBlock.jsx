@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 function PizzaBlock({ name, imageUrl, price, types, sizes }) {
   const availableTypes = ['тонкое', 'традиционное'];
-  const availableSizes = [ 26, 30, 40 ];
+  const availableSizes = [26, 30, 40];
   const [activeType, setActiveType] = React.useState(types[0]);
   const [activeSize, setActiveSize] = React.useState(sizes[0]);
 
@@ -34,7 +34,7 @@ function PizzaBlock({ name, imageUrl, price, types, sizes }) {
           ))}
         </ul>
         <ul>
-        {availableSizes.map((size, index) => (
+          {availableSizes.map((size, index) => (
             <li
               key={size}
               onClick={() => onSelectSize(index)}
