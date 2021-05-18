@@ -4,8 +4,7 @@ const initialState = {
 };
 
 const pizzas = (state = initialState, action) => {
-   switch (action.type) {
-      
+   switch (action.type) { 
       case 'SET_PIZZAS':
          return {
             ...state,

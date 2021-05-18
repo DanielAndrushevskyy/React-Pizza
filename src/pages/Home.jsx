@@ -20,7 +20,7 @@ function Home() {
 
   React.useEffect(() => {
     dispatch(fetchPizzas(sortBy, category));
-  }, [category]);
+  }, [sortBy, category]);
 
   const onSelectCategory = React.useCallback((index) => {
     dispatch(setCategory(index));
