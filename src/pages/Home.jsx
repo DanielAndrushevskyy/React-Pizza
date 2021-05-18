@@ -27,6 +27,7 @@ function Home() {
   }, []);
 
   const onSelectSortType = React.useCallback((type) => {
+    console.log(type)
     dispatch(setSortBy(type));
   }, []);
 
